@@ -40,14 +40,19 @@ namespace WebMarketApp
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+
+            //Daste resi be safat .html css js
             app.UseStaticFiles();
 
+            //Ja be Jaii bin Safehat
             app.UseRouting();
 
+            //Sateh Dast Resii
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
+                //Safeh Aval
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
