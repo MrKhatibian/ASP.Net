@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebMarketApp.Data;
+using WebMarketApp.Models;
 
 namespace WebMarketApp.Controllers
 {
@@ -20,7 +21,7 @@ namespace WebMarketApp.Controllers
         public IActionResult Index()
         {
             //Show List Of Data In DataBase
-            var CategoryList = _db.Categories.ToList();
+            IEnumerable<Category> CategoryList = _db.Categories.ToList();
             return View();
         }
     }
