@@ -99,7 +99,6 @@ C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\Mic
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.Xml.dll
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
@@ -157,7 +156,6 @@ C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\Sys
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\System.Data.dll
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\System.Diagnostics.Contracts.dll
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\System.Diagnostics.Debug.dll
-C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\System.Diagnostics.EventLog.dll
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\System.Diagnostics.FileVersionInfo.dll
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\refs\System.Diagnostics.Process.dll
@@ -355,3 +353,7 @@ C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\obj\Debug\net5.0\WebMarke
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\obj\Debug\net5.0\ref\WebMarketApp.dll
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\obj\Debug\net5.0\WebMarketApp.pdb
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\obj\Debug\net5.0\WebMarketApp.genruntimeconfig.cache
+C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
