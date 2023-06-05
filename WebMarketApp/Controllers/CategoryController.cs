@@ -11,6 +11,7 @@ namespace WebMarketApp.Controllers
     {
         //Creat Object From Baster ApllicationDbContext
         private readonly ApplicationDbContext _db;
+
         //Creat Ctor For give Value to _db
         public CategoryController(ApplicationDbContext db)
         {
@@ -18,6 +19,8 @@ namespace WebMarketApp.Controllers
         }
         public IActionResult Index()
         {
+            //Show List Of Data In DataBase
+            var CategoryList = _db.Categories.ToList();
             return View();
         }
     }
