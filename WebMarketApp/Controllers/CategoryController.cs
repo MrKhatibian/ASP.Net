@@ -9,8 +9,13 @@ namespace WebMarketApp.Controllers
 {
     public class CategoryController : Controller
     {
-        //Make Object From Baster ApllicationDbContext
+        //Creat Object From Baster ApllicationDbContext
         private readonly ApplicationDbContext _db;
+        //Creat Ctor For give Value to _db
+        public CategoryController(ApplicationDbContext db)
+        {
+            _db = db;
+        }
         public IActionResult Index()
         {
             return View();
