@@ -21,8 +21,9 @@ namespace WebMarketApp.Controllers
         public IActionResult Index()
         {
             //Show List Of Data In DataBase
+            //var CategoryList = _db.Categories.ToList();
             IEnumerable<Category> CategoryList = _db.Categories;
-            return View();
+            return View(CategoryList);
         }
     }
 }
