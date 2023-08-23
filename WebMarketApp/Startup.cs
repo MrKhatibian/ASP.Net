@@ -26,6 +26,7 @@ namespace WebMarketApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
             //Add DbContext service
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("MyConnection")
