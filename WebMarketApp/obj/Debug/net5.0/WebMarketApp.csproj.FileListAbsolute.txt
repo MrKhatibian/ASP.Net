@@ -430,3 +430,4 @@ C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\zh-Hant\
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs

@@ -4,11 +4,10 @@
 }
 
 <form method="post">
-    <div class="">
-        
+    <div class="p-4">        
         <div class="border" p-3 mt-4>
             <div class="row pb-2 text-center">
-                <h3>ایجاد دسته جدید</h3>
+                <h4>ایجاد دسته جدید</h4>
                 <hr />
             </div>    
             <div class="mb-2">
@@ -17,6 +16,8 @@
                 <label asp-for="DisplayOrder"></label>
                 <input asp-for="DisplayOrder" class="form-control" />
             </div>
+            <button type="submit" class="btn btn-primary" style="width: 150px" >ایجاد</button>
+            <a class="btn btn-secondary" style="width:150px" asp-controller="Category" asp-action="index">بازگشت به دسته بندی</a>
         </div>
         
     </div>
