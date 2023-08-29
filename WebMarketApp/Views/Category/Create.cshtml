@@ -12,11 +12,12 @@
             </div>    
             <div class="mb-2">
                 <label asp-for="Name"></label>
-                <input asp-for="Name" class="form-control mb-2" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger mb-2"></span>
+                <br />
                 <label asp-for="DisplayOrder"></label>
-                <input asp-for="DisplayOrder" class="form-control mb-2" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <input asp-for="DisplayOrder" class="form-control" />
+                <span asp-validation-for="DisplayOrder" class="text-danger mb-2"></span>
             </div>
             <button type="submit" class="btn btn-primary" style="width: 150px" >ایجاد</button>
             <a class="btn btn-secondary" style="width:300px" asp-controller="Category" asp-action="index">بازگشت به دسته بندی</a>
