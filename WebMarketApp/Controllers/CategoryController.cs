@@ -32,5 +32,11 @@ namespace WebMarketApp.Controllers
             return View();
         }
 
+        //Post
+        [HttpPost]
+        public IActionResult Create(Category obj)
+        {
+            return View();
+        }
     }
 }
