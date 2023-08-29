@@ -7,14 +7,18 @@
     <div class="">
         
         <div class="border" p-3 mt-4>
-            <div class="row pb-2">
+            <div class="row pb-2 text-center">
                 <h3>ایجاد دسته جدید</h3>
-            </div>            
+                <hr />
+            </div>    
+            <div class="mb-2">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+                <label asp-for="DisplayOrder"></label>
+                <input asp-for="DisplayOrder" class="form-control" />
+            </div>
         </div>
-        <label asp-for="Name"></label>
-        <input type="type" name="Name" value="" />
-        <label asp-for="DisplayOrder"></label>
-        <input type="type" name="DisplayOrder" value="" />
+        
     </div>
 </form>
 
