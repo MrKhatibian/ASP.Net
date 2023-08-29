@@ -3,30 +3,43 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-<table class="table table-striped table-bordered" style="width : 100%">   
-    <thead>
-        <tr>
-            <th>
-                Name Of Type
-            </th>
-            <th>
-                Order
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var obj in Model)
-        {
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+
+        </div>
+        <div class="col-6">
+
+        </div>
+
+    </div>
+
+    <table class="table table-striped table-bordered" style="width : 100%">
+        <thead>
             <tr>
-                <td width="50%">
-                    @obj.Name
-                </td>
-                <td width="30%">
-                    @obj.DisplayOrder
-                </td>
+                <th>
+                    Name Of Type
+                </th>
+                <th>
+                    Order
+                </th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td width="50%">
+                        @obj.Name
+                    </td>
+                    <td width="30%">
+                        @obj.DisplayOrder
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
 
