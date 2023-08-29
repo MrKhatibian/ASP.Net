@@ -38,7 +38,7 @@ namespace WebMarketApp.Controllers
         {
             if (obj.Name == obj.DisplayOrder.ToString())
             {
-                ModelState.AddModelError("Custom Error", "مقدرا فیلد ها نباید یکسان باشد");
+                ModelState.AddModelError("Name", "مقدرا فیلد ها نباید یکسان باشد");
             }
             if (ModelState.IsValid)
             {
