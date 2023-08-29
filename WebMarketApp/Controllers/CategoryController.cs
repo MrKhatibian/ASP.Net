@@ -36,6 +36,10 @@ namespace WebMarketApp.Controllers
         [HttpPost]
         public IActionResult Create(Category obj)
         {
+            if (obj.Name == obj.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError("Custom Error", "مقدرا فیلد ها نباید یکسان باشد");
+            }
             if (ModelState.IsValid)
             {
                 _db.Categories.Add(obj);
