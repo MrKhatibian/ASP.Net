@@ -10,7 +10,7 @@ namespace WebMarketApp.Models
     {
         [Key]
         public int ID { get; set; }
-        [Required]
+        [Required(ErrorMessage ="لطفا نام دسته وارد کنید")]
         public string Name { get; set; }
         public int DisplayOrder { get; set; }
         public DateTime CreatDateTime { get; set; } = DateTime.Now;
