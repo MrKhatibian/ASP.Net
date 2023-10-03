@@ -15,7 +15,7 @@ namespace WebMarketApp.Models
         [DisplayName("عنوان دسته")]
         public string Name { get; set; }
         [Required(ErrorMessage = "لطفا ترتیب دسته وارد کنید")]
-        [DisplayName("تزتیب دسته")]
+        [DisplayName("ترتیب دسته")]
         [Range(1,100,ErrorMessage ="مقدار بین 1 تا 100 مجاز می باشد")]
         public int DisplayOrder { get; set; }
         public DateTime CreatDateTime { get; set; } = DateTime.Now;
