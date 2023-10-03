@@ -68,7 +68,7 @@ namespace WebMarketApp.Controllers
                 return NotFound();
             }
 
-            return View();
+            return View(categoryFromDb);
         }
     }
 }
