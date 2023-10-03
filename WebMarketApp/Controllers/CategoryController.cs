@@ -57,9 +57,17 @@ namespace WebMarketApp.Controllers
             {
                 return NotFound();
             }
+            //Find ID For Edit
             var categoryFromDb = _db.Categories.Find(id);
             //var categoryFromDbFirst = _db.Categories.FirstOrDefault(u => u.ID == id);
             //var categoryFromDbSingle = _db.Categories.SingleOrDefault( u => u.ID == id);
+
+            //Not Send For UnUnik Id Value
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+            }
+
             return View();
         }
     }
