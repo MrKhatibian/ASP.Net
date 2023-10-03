@@ -57,6 +57,9 @@ namespace WebMarketApp.Controllers
             {
                 return NotFound();
             }
+            var categoryFromDb = _db.Categories.Find(id);
+            //var categoryFromDbFirst = _db.Categories.FirstOrDefault(u => u.ID == id);
+            //var categoryFromDbSingle = _db.Categories.SingleOrDefault( u => u.ID == id);
             return View();
         }
     }
