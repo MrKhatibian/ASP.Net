@@ -70,5 +70,23 @@ namespace WebMarketApp.Controllers
 
             return View(categoryFromDb);
         }
+
+        //Post For Edit
+        [HttpPost]
+        public IActionResult Edit(Category obj)
+        {
+            if (obj.Name == obj.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError("Name", "مقدرا فیلد ها نباید یکسان باشد");
+            }
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Add(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+
+        }
     }
 }
