@@ -44,6 +44,7 @@ namespace WebMarketApp.Controllers
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
+                TempData["Success"] = "دسته با مو فقیت ایجاد شد";
                 return RedirectToAction("Index");
             }
             return View();           
@@ -82,6 +83,7 @@ namespace WebMarketApp.Controllers
             {
                 _db.Categories.Update(obj);
                 _db.SaveChanges();
+                TempData["Success"] = "دسته با مو فقیت ویرایش شد";
                 return RedirectToAction("Index");
             }
             return View();
@@ -120,6 +122,7 @@ namespace WebMarketApp.Controllers
             {
                 _db.Categories.Remove(obj);
                 _db.SaveChanges();
+                TempData["Success"] = "دسته با مو فقیت حذف شد";
                 return RedirectToAction("Index");
             }
             return View();
