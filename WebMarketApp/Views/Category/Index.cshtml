@@ -4,6 +4,15 @@
 }
 
 <div class="container p-3">
+    @if (TempData["Success"] != null)
+    {
+    <div class="text-end">
+        <h3 class="text-danger">
+            @TempData["Success"]
+        </h3>
+    </div>
+    }
+
     <div class="row pt-4">
         <div class="col-6 text-center">
             <h4 class="text-light">لیست دسته بندی</h4>
@@ -27,7 +36,7 @@
                 </th>
                 <th>
                     Edit
-                </th>                
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -44,6 +53,7 @@
                         <div class="w-75 btn-group" role="group">
                             <a asp-controller="Category" asp-action="Edit" asp-route-Id="@obj.ID"><i class="bi bi-pencil-fill"></i> ویرایش</a>
                         </div>
+                        <br />
                         <div class="w-75 btn-group" role="group">
                             <a asp-controller="Category" asp-action="Delete" asp-route-Id="@obj.ID"><i class="bi bi-trash"></i> Delete</a>
                         </div>
