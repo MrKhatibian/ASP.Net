@@ -88,7 +88,7 @@ namespace WebMarketApp.Controllers
         }
 
         //Get for Delete
-        public IActionResult Delet(int? id)
+        public IActionResult Delete(int? id)
         {
             if (id == null || id == 0)
             {
@@ -110,7 +110,7 @@ namespace WebMarketApp.Controllers
 
         //Post For Delete
         [HttpPost]
-        public IActionResult Delet(Category obj)
+        public IActionResult Delete(Category obj)
         {
             if (obj.Name == obj.DisplayOrder.ToString())
             {
