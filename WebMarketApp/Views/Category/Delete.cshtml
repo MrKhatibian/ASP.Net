@@ -1,13 +1,13 @@
 ﻿@model Category
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Delete";
 }
 
-<form method="post" asp-action="Edit">
+<form method="post" asp-action="Delete">
     <div class="p-4">        
         <div class="border  p-2 mt-2">
             <div class="row pb-2 text-center">
-                <h4>ویرایش دسته </h4>
+                <h4>حذف دسته</h4>
                 <hr />
             </div>
             @*<div asp-validation-summary="All" class="text-danger"></div>*@
@@ -20,7 +20,7 @@
                 <input asp-for="DisplayOrder" class="form-control" />
                 <span asp-validation-for="DisplayOrder" class="text-danger mb-2"></span>
             </div>
-            <button type="submit" class="btn btn-primary" style="width: 150px" >ویرایش دسته</button>
+            <button type="submit" class="btn btn-primary" style="width: 150px" >حذف</button>
             <a class="btn btn-secondary" style="width:300px" asp-controller="Category" asp-action="index">بازگشت به دسته بندی</a>
         </div>
         
