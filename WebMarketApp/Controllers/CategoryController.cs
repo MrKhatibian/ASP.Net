@@ -46,8 +46,7 @@ namespace WebMarketApp.Controllers
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View();
-           
+            return View();           
         }
 
         //Get for Edit
@@ -86,7 +85,44 @@ namespace WebMarketApp.Controllers
                 return RedirectToAction("Index");
             }
             return View();
+        }
 
+        //Get for Delete
+        public IActionResult Delet(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            //Find ID For Edit
+            var categoryFromDb = _db.Categories.Find(id);
+            //var categoryFromDbFirst = _db.Categories.FirstOrDefault(u => u.ID == id);
+            //var categoryFromDbSingle = _db.Categories.SingleOrDefault( u => u.ID == id);
+
+            //Not Send For UnUnik Id Value
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+            }
+
+            return View(categoryFromDb);
+        }
+
+        //Post For Delete
+        [HttpPost]
+        public IActionResult Delet(Category obj)
+        {
+            if (obj.Name == obj.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError("Name", "مقدرا فیلد ها نباید یکسان باشد");
+            }
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Remove(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
         }
     }
 }
