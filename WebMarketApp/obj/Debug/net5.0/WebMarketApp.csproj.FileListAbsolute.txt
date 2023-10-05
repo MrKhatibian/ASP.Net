@@ -432,3 +432,4 @@ C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\bin\Debug\net5.0\runtimes
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
 C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\obj\Debug\net5.0\Razor\Views\Category\Edit.cshtml.g.cs
+C:\Users\Khatibian\source\repos\WebMarket\WebMarketApp\obj\Debug\net5.0\Razor\Views\Category\Delete.cshtml.g.cs

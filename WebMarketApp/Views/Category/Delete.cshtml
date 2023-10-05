@@ -13,11 +13,11 @@
             @*<div asp-validation-summary="All" class="text-danger"></div>*@
             <div class="mb-2">
                 <label asp-for="Name"></label>
-                <input asp-for="Name" class="form-control" />
+                <input asp-for="Name" disabled class="form-control" />
                 <span asp-validation-for="Name" class="text-danger mb-2"></span>
                 <br />
                 <label asp-for="DisplayOrder"></label>
-                <input asp-for="DisplayOrder" class="form-control" />
+                <input asp-for="DisplayOrder" disabled class="form-control" />
                 <span asp-validation-for="DisplayOrder" class="text-danger mb-2"></span>
             </div>
             <button type="submit" class="btn btn-primary" style="width: 150px" >حذف</button>
