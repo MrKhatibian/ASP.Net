@@ -106,26 +106,10 @@ namespace WebMarketApp.Controllers
             {
                 return NotFound();
             }
-
-            return View(categoryFromDb);
-        }
-
-        //Post For Delete
-        [HttpPost]
-        public IActionResult Delete(Category obj)
-        {
-            if (obj.Name == obj.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("Name", "مقدرا فیلد ها نباید یکسان باشد");
-            }
-            if (ModelState.IsValid)
-            {
-                _db.Categories.Remove(obj);
-                _db.SaveChanges();
-                TempData["Success"] = "دسته با مو فقیت حذف شد";
-                return RedirectToAction("Index");
-            }
-            return View();
+            _db.Categories.Remove(categoryFromDb);
+            _db.SaveChanges();
+            TempData["Success"] = "دسته با مو فقیت حذف شد";
+            return RedirectToAction("Index");            
         }
     }
 }
